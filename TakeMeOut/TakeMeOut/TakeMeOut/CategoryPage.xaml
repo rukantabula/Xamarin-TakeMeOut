@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TakeMeOut.CategoryPage">
+    <ListView x:Name="MainListView"
+         HasUnevenRows="True">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+        <StackLayout Orientation="Vertical">
+          <Grid>          
+          <Label Text="{Binding Category}"/>
+          <Label Text="{Binding Description}"/>
+          <Image Aspect="AspectFill"
+            HorizontalOptions="FillAndExpand"
+            Source="{Binding ImageUrl}" />
+            <Grid.GestureRecognizers  >
+              <TapGestureRecognizer Tapped="ListButton_OnTapped" />
+              
+            </Grid.GestureRecognizers>
+
+          </Grid>
+          
+        </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
