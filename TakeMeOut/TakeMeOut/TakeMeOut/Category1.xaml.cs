@@ -9,22 +9,22 @@ using XamarinForms.Views;
 
 namespace TakeMeOut
 {
-    public partial class CategoryPage : ContentPage
+    public partial class Category1 : ContentPage
     {
-        public CategoryPage()
+        public Category1()
         {
             InitializeComponent();
             MainListView.ItemsSource = new List<CategoryList>
             {
                 new CategoryList
                 {
-               
+
                     ImageUrl = "rest8.png"
 
                 },
                     new CategoryList
                 {
-                    
+
                     ImageUrl = "rest4.png"
 
                 },
@@ -36,7 +36,7 @@ namespace TakeMeOut
                 },
                     new CategoryList
                 {
-                   
+
                     ImageUrl = "rest5.png"
 
 
@@ -57,16 +57,15 @@ namespace TakeMeOut
                 }
 
             };
-             
-    }
 
-        private async void ListButton_OnTapped(object sender, EventArgs e)
+        }
+
+        private async void List1Button_OnTapped(object sender, EventArgs e)
         {
 
-           
-                await Navigation.PushAsync(new FoursquareViewPage());
-           
-            }
-           
+
+            await Navigation.PushAsync(new FoursquareViewPage1());
+
+        }
     }
 }

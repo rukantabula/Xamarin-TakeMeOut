@@ -7,7 +7,7 @@ using XamarinForms.Models;
 
 namespace XamarinForms.ViewModels
 {
-    public class FoursquareViewModel : INotifyPropertyChanged
+    public class FoursquareViewModel1 : INotifyPropertyChanged
     {
 
         // use this link to get an api_key : https://foursquare.com/developers/register/
@@ -19,7 +19,7 @@ namespace XamarinForms.ViewModels
 
 
         // doc : https://developer.foursquare.com/docs/venues/search
-        private string apiUrlForVenues = $"https://api.foursquare.com/v2/venues/explore?near=copenhagen&client_id={ClientId}&client_secret={ClientSecret}&v={v}&radius=1000&venuePhotos=1&categoryId=4bf58dd8d48988d1c9941735";
+        private string apiUrlForVenues = $"https://api.foursquare.com/v2/venues/explore?near=aarhus&client_id={ClientId}&client_secret={ClientSecret}&v={v}&radius=1000&venuePhotos=1&categoryId=4d4b7105d754a06374d81259";
 
         private FoursquareVenues _foursquareVenues;
 
@@ -33,7 +33,7 @@ namespace XamarinForms.ViewModels
             }
         }
 
-        public FoursquareViewModel()
+        public FoursquareViewModel1()
         {
             InitDataAsync();
         }

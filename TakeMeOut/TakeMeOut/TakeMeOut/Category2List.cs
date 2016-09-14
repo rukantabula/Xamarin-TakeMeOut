@@ -3,16 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Xamarin.Forms;
 
 namespace TakeMeOut
 {
-    public class CategoryList
+    public class Category2List
     {
-    
-
         public string ImageUrl { get; set; }
-        
-
     }
 }

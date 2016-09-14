@@ -3,22 +3,22 @@ using XamarinForms.ViewModels;
 
 namespace XamarinForms.Views
 {
-    public class FoursquareViewPage : ContentPage
+    public class FoursquareViewPage1 : ContentPage
     {
 
-        public FoursquareViewPage()
+        public FoursquareViewPage1()
         {
 
-            Title = "Copenhagen";
+            Title = "Aarhus";
             BackgroundColor = Color.White;
 
-            var foursquareViewModel = new FoursquareViewModel();
+            var foursquareViewModel1 = new FoursquareViewModel1();
 
-            BindingContext = foursquareViewModel;
+            BindingContext = foursquareViewModel1;
 
             var pageTitleLabel = new Label
             {
-                Text = "Copenhagen",
+                Text = "Aarhus",
                 TextColor = Color.Gray,
                 FontSize = 24
             };

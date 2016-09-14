@@ -15,6 +15,15 @@ namespace TakeMeOut
         {
             InitializeComponent();
         }
-       
-    }
+
+        private async void AreaButton_OnClicked(object sender, EventArgs e)
+        {
+           
+                await Navigation.PushAsync(new HomePage());
+
+            }
+
+            
+
+        }
 }
