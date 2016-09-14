@@ -16,9 +16,11 @@ namespace XamarinForms.ViewModels
         private const string v = "20160611";
         private const string venueId = "40a55d80f964a52020f31ee3";
 
+        public string name = "Aarhus";
+
 
         // doc : https://developer.foursquare.com/docs/venues/search
-        private string apiUrlForVenues = $"https://api.foursquare.com/v2/venues/explore?near=Aarhus&client_id={ClientId}&client_secret={ClientSecret}&v={v}&radius=1000&venuePhotos=1&categoryId=4bf58dd8d48988d1c9941735";
+        private string apiUrlForVenues = $"https://api.foursquare.com/v2/venues/explore?near=copenhagen&client_id={ClientId}&client_secret={ClientSecret}&v={v}&radius=1000&venuePhotos=1&categoryId=4bf58dd8d48988d1c9941735";
 
         private FoursquareVenues _foursquareVenues;
 

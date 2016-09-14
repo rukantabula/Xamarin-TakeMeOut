@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Plugin.Share;
 using Xamarin.Forms;
+using XamarinForms.Views;
 
 namespace TakeMeOut
 {
@@ -14,5 +15,6 @@ namespace TakeMeOut
         {
             InitializeComponent();
         }
+       
     }
 }
